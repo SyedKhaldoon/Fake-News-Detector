@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="../static/CSS/feedback.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>FAKE NEWS</h1>
+        <h2>DETECTOR</h2>
+    </div>
+    <ul>
+        <li><a href="" class="previous">&laquo; </a></li>
+        <li><a href="/det">HOME</a></li>
+        <li><a href="/feedback">FEEDBACK</a></li>
+        <li><a href="/about">ABOUT US</a></li>
+        <div class="search">
+            <form class="example" action="/detect" method="post">
+                <input type="text" placeholder="Search.." name="News_Title" autocomplete="on" required />
+
+            </form>
+        </div>
+    </ul>
+    <div class="containerb">
+        <marquee direction="right" style="border: rgb(10, 0, 0) 2px SOLID">
+            FakeNewsDetector FakeNewsDetector FakeNewsDetector FakeNewsDetector
+            FakeNewsDetector FakeNewsDetector FakeNewsDetector FakeNewsDetector
+            FakeNewsDetector
+        </marquee>
+    </div>
+    <section class="contact">
+        <div class="content">
+            <h4>FEEDBACK</h4>
+
+
+        </div>
+        <div class="containera">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>University of Engineering & Technology,<br>Department Of Computer
+                            Science,<br>Lahore,Pakistan,</p>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p> (042) 37951901</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p> cs@uet.edu.pk</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="contactform">
+                <form id="myform" action="/feed" method="post">
+                    {% if mess is defined and mess %}
+                    <div class="alert alert-warning" style="font-weight: bold;text-align: center; color: brown;">{{ mess
+                        }}</div>
+                    {% endif %}
+
+                    <h3>Send Message</h3>
+                    <div class="inputbox">
+                        <input id="name" type="text" name="name" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input id="email" type="email" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea id="message" required="required" name="message"></textarea>
+                        <span>Type your Message...</span>
+
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name="submit" value="Send">
+                    </div>
+
+            </div>
+            </form>
+        </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

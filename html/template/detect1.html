@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake News Detector</title>
+  <link rel="icon" href="../static/Images/fake.png">
+  <link rel="stylesheet" href="../static/CSS/detect.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>FAKE NEWS</h1>
+    <h2>DETECTOR</h2>
+  </div>
+  <ul>
+    <li><a href="" class="previous">&laquo; </a></li>
+    <li><a href="/det">HOME</a></li>
+    <li><a href="/feedback">FEEDBACK</a></li>
+    <li><a href="/about">ABOUT US</a></li>
+    <div class="search">
+      <form class="example" action="/detect" method="post">
+        <input type="text" placeholder="Search.." name="News_Title" autocomplete="on" required />
+
+      </form>
+    </div>
+  </ul>
+  <div class="containerb">
+    <marquee id="marquee" direction="right" style="border: rgb(10, 0, 0) 2px SOLID">
+      FakeNewsDetector FakeNewsDetector FakeNewsDetector FakeNewsDetector
+      FakeNewsDetector FakeNewsDetector FakeNewsDetector FakeNewsDetector
+      FakeNewsDetector
+    </marquee>
+  </div>
+  <div class="containerc"></div>
+  </div>
+  <h3>CHECK THE NEWS</h3>
+  <br>
+  <form action="" method="POST">
+    <textarea rows="12" cols="100" id="textarea" name="News_Title" placeholder="Type the news you wanna check..."
+      autocomplete="on" required>
+      </textarea><br>
+     <div align="center" style="margin-top: 30px; margin-bottom: 20px;">
+    <button class="detect-btn" id="detect" type="submit" formaction="/detect">DETECTION</button>
+    <button class="detect-btn" id="predict" type="submit" formaction="/predict">PREDICTION</button>
+    </div>
+
+    <!--     
+    <div class="submit">
+      <input type="submit" name="check" value="CHECK THE NEWS" />
+    </div> -->
+
+
+  </form>
+  <h4>Wait a moment...</h4>
+
+</body>
+<script>
+  function detect() {
+    const btn = document.getElementById('detect');
+    btn.style.backgroundColor = 'black';
+    btn.style.border = 'black';
+    var x = document.getElementById("textarea");
+    x.value = '';
+    btn = x.value;
+
+  }
+  function predict() {
+    const btn = document.getElementById('predict');
+    btn.style.backgroundColor = 'black';
+    btn.style.border = 'black';
+    var x = document.getElementById("textarea");
+    x.value = '';
+    btn = x.value;
+
+  }
+
+  // var searches = [];
+  // var search = document.getElementById("search");
+  // function addSearch() {
+  //   searches.push(search.value);
+  //   var marquee = document.getElementById("marquee");
+  //   // var p = document.createElement("p");
+  //   marquee.innerHTML = searches[searches.length - 1];
+  //   marquee.appendChild(marquee);
+  // }
+
+</script>
+
+</html>

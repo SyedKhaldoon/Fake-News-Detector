@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake News Detector</title>
+  <link rel="icon" href="../static/Images/fake.png">
+  <link rel="stylesheet" href="../static/CSS/news.css">
+
+
+</head>
+
+
+<body>
+
+  <div class="container ">
+    <h1>FAKE NEWS </h1>
+    <h2>DETECTOR</h2>
+  </div>
+  <ul>
+    <li><a href="" class="previous">&laquo; </a></li>
+    <li><a href="/det">HOME</a></li>
+    <li><a href="/feedback">FEEDBACK</a></li>
+    <li><a href="/about">ABOUT US</a></li>
+    <div class="search">
+      <form class="example" action="/detect" method="post">
+        <input type="text" placeholder="Search.." name="news" autocomplete="on" required />
+
+        </button>
+      </form>
+    </div>
+  </ul>
+
+  <div class="containerb ">
+
+
+    <marquee direction="right" style="border:rgb(10, 0, 0) 2px SOLID">
+      FakeNewsDetector FakeNewsDetector FakeNewsDetector FakeNewsDetector FakeNewsDetector FakeNewsDetector
+      FakeNewsDetector FakeNewsDetector FakeNewsDetector
+    </marquee>
+
+  </div>
+
+ 
+  <form action="" method="post">
+  <div align="left" style="padding-top: 70px;">
+  <h6 style="font-size: 25px;">Prediction </h6> {% if answer %}
+  <label style="padding: 50px 50px 50px 50px;"> {{ answer }}</label>
+  {% endif %}
+   <br>
+  <h6 >
+
+  {% if probability %}
+  <label style="color: green; padding:40px; font-size: 20px;"> There are  {{ probability }}  probability of this news to be authentic</label>
+  {% endif %}</h6>
+  </div>
+  </form>
+  </div>
+
+
+</body>
+
+</html>

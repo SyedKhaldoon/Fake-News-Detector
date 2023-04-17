@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector</title>
+    <link rel="icon" href="../static/Images/fake.png">
+    <link rel="stylesheet" href="../static/CSS/signup.css">
+    <script src="../static/JS/signup.js"> </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="signup">
+            <form id="form" method="post" action="/newsenter">
+
+                <label for="chk" aria-hidden="true">Sign Up</label>
+                <input type="email" name="email" id="email" placeholder=" Email" required>
+                <p id="message"> </p>
+
+                <input type="password" name="pass" id="pass" placeholder=" Password" required>
+                <p id="message1"> </p>
+
+                <input type="password" name="confirmpsw" id="cpassword" placeholder=" Confirm Password" required>
+                <p id="message2"> </p>
+                <button name="submit" type="submit" onclick="register()" name="submit" value="submit" class="submit">
+                    Sign Up
+                </button>
+            </form>
+        </div>
+
+        <div class="login">
+            <form method="post" action="/login">
+                <label for="chk" aria-hidden="true">Login</label>
+                {% if message is defined and message %}
+                <div class="alert alert-warning" style="font-weight: bold;text-align: center; color: brown;">{{ message
+                    }}</div>
+                {% endif %}
+
+                <input type="email" name='email' placeholder=" Email" autocomplete="on" required>
+                <input type="password" name="Psw" placeholder=" Password" autocomplete="on" required>
+
+                <a href="{{ url_for('forgot') }}" style="color:red; padding:0 0 0 60px; font-size: 15px;">Forgot
+                    Password?</a>
+
+                <button type="submit" name="submit" class="submit" onclick="login()"> Login</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

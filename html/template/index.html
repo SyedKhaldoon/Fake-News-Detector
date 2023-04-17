@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fake News Detector</title>
+  <link rel="icon" href="../static/Images/fake.png" />
+  <link rel="stylesheet" href="../preloader/loader.css" />
+</head>
+
+<body onload="myfunction()" id="loading" >
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <lottie-player src="../static/Images/Fake_News_Loading.json" speed="1" style="width: 50%; height: 50vh;" loop autoplay></lottie-player>
+  <script>
+    var preloader = document.getElementById("loading");
+    setTimeout(function () {
+      preloader.style.display = 'none';
+      window.location.href = "/startpage"
+    }, 5000);
+  </script>
+</body>
+
+</html>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Jost", sans-serif;
+    background: #234270;
+
+  }
+</style>

@@ -1,0 +1,103 @@
+<?php
+session_start();
+ob_start();
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Reality Check</title>
+  <style>
+    body {
+      background-image: url('https://st.depositphotos.com/1411161/1378/v/950/depositphotos_13782745-stock-illustration-newsprint-background.jpg')
+    }
+
+    #content {
+      background-image: url('https://www.infinityfamilycare.com/wp-content/uploads/2015/11/white-parchment-paper-texture-1-1024x575.jpg');
+      border-radius: 30px;
+      border: 3px solid white;
+      height: 400px;
+      width: 750px;
+      margin: 150px 300px 300px 300px;
+    }
+
+    #button {
+      list-style: none;
+      padding: 20px;
+      font-size: 30px;
+      margin-left: 500px;
+      text-decoration: none;
+    }
+
+    #button #detect {
+      border: 2px solid gainsboro;
+      background-color: white;
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 3px;
+      text-decoration: none;
+    }
+
+    #button #predict {
+      border: 2px solid gainsboro;
+      background-color: white;
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 3px;
+    }
+
+    #title {
+      margin-top: 0px;
+      margin-left: 200px;
+      width: 950px;
+      height: 100px;
+      background-image: url('https://www.infinityfamilycare.com/wp-content/uploads/2015/11/white-parchment-paper-texture-1-1024x575.jpg');
+    }
+
+    #text {
+      height: 150px;
+      width: 500px;
+      margin-left: 100px;
+      margin-right: 80px;
+    }
+
+    #im {
+      margin: 10px 300px 10px 100px;
+      height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="title">
+    <h1 style="padding:20px;margin-left:200px;font-family:Courier New;font-size:50px;">FAKE NEWS DETECTOR</h1>
+  </div>
+  <!-- <form method="post" action="../JS/backend.php"><div id="button" >
+    <button onclick="content(1)" id="detect" ><a href="#content" style="text-decoration: none;">DETECTION</a></button>
+    <button onclick="content(1)" id="predict"><a href="#content" style="text-decoration: none;">PREDICTION</a></button>
+  </div></form> -->
+  <div id="content">
+    <form method="POST" action="../JS/backend.php">
+      <h1 style="margin-left: 100px; margin-right: 50px;margin-top:60px;font-family:Courier New;">Enter Text:</h1>
+
+      <input id="text" type="text" name="News_Title"
+        value="<?php if (isset($_GET['News_Title'])) {echo $_GET['News_Title'];} ?>">
+
+      <br>
+      <input type="submit" name="DETECT" value="DETECT" style="margin: 30px 300px 300px 300px; padding: 10px; ">
+      <input type="submit" name="PREDICT" value="PREDICT">
+      <br>
+    </form>
+  </div>
+</body>
+
+</html>
+<!-- <script>
+  function content(a) {
+    if (a == 1)
+      document.getElementById("content").style.display = "block";
+    else
+      document.getElementById("content").style.display = "none";
+  }
+</script> -->

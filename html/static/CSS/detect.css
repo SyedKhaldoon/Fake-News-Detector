@@ -1,0 +1,238 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    
+
+}
+body{
+    background-image: url("../Images/images\ \(1\).jpg") ;
+    background-position: center;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.detect-btn{
+    padding: 7px 10px 7px 10px;
+    color: white;
+    background-color: #6980A1;
+    border-radius: 10px;
+    width: 160px;
+    border: 3px solid #6980A1;
+    font-size: large;
+    font-weight: bold;
+    font-family: sans-serif;
+    height: 40px;
+    margin-left: 20px;
+  
+}
+.detect-btn:hover
+{
+  background-color: black;
+  transition: 1.5s;
+  border: 3px solid black;
+  cursor: pointer;
+}
+.login{
+    padding: 40px 20px 0px 20px;
+    align-items: center;
+
+    
+}
+
+input{
+    padding: 3px 3px 3px 3px;
+    width: 200px ;
+}
+.container {
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(0, 0, 0);
+  
+}
+h1{
+  font-style: normal;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+  letter-spacing: 2px;
+}
+h2{
+  font-style: normal;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+  letter-spacing: 2px;
+}
+
+ul {
+    /* Safari */
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px, 20px, 20px, 20px;
+    overflow: hidden;
+    background-color:#234270;
+   
+  }
+  
+  li {
+  
+    border-right: 2px solid rgb(0, 0, 0);
+    float: left;
+  }
+  
+  li a {
+    
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-family: sans-serif;
+    height: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+    transition: 2s;
+    
+    
+  }
+
+.example {
+  padding: 10px;
+    width: 60%;
+    margin-left: 250px;
+    margin-top: 2px;
+    margin-bottom: 1px;
+    height: 15px;
+    border-radius: 20px;
+    display: flex;
+    background: white;
+  }
+  .example input
+  {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    color: black;
+  }
+  ul button:hover{
+    
+      background: #0b7dda;
+      transition:2s;
+  }
+
+
+ 
+  ul::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+ 
+  .containerb{
+    background-color: black;
+    color: white;
+    word-spacing: 30px;
+    padding-top: 2px;
+    
+  }
+  .containerc{
+    padding: 5px 20px 5px 40px;
+    background-color: #234270
+
+  }
+.example .sear .img-search{
+    width: 25px;
+    top: 10%;
+  }
+.example .sear
+  {
+    border: 0;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: white;
+    cursor: pointer;
+    margin-right: 20px;
+    outline: none;
+  
+  }
+ 
+
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 20px;
+  }
+  .previous:hover{
+    color: black;
+    background-color: rgba(150, 141, 141, 0.712); 
+    transition: 1s;
+  }
+  
+
+  h3{
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: xx-large;
+    word-spacing: 10px;
+    
+    font-weight: 900;
+  }
+
+  textarea{
+    margin-left: 235px;
+    margin-top: 15px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    border: none;
+    padding:10px 10px 10px 20px;
+    outline: none;
+  }
+
+  input[type=submit]
+  {
+      background-color: rgb(139, 20, 20);
+      color: white;
+      border: rgb(139, 20, 20);
+      margin-left: 610px;
+      height: 35px;
+      width: 150px;
+      margin-top: 20px;
+      cursor: pointer;      
+ }
+ 
+ h4{
+  color: white;
+  font-style: italic;
+  margin-left: 638px;
+  margin-top: 12px;
+  margin-bottom: 55px;
+  font-weight: lighter;
+ }
+  
+.search
+{
+  display: flex;
+
+}

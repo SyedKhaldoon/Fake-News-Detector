@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake News Detector</title>
+  <link rel="icon" href="../static/Images/fake.png">
+  <link rel="stylesheet" href="../static/CSS/news.css">
+
+
+</head>
+
+
+<body>
+
+  <div class="container ">
+    <h1>FAKE NEWS </h1>
+    <h2>DETECTOR</h2>
+  </div>
+  <ul>
+    <li><a href="" class="previous">&laquo; </a></li>
+    <li><a href="/det">HOME</a></li>
+    <li><a href="/feedback">FEEDBACK</a></li>
+    <li><a href="/about">ABOUT US</a></li>
+    <div class="search">
+      <form class="example" action="/detect" method="post">
+        <input type="text" placeholder="Search.." name="News_Title" autocomplete="on" required />
+
+        </button>
+      </form>
+    </div>
+  </ul>
+
+  <div class="containerb ">
+
+
+    <marquee direction="right" style="border:rgb(10, 0, 0) 2px SOLID">
+      FakeNewsDetector FakeNewsDetector FakeNewsDetector FakeNewsDetector FakeNewsDetector FakeNewsDetector
+      FakeNewsDetector FakeNewsDetector FakeNewsDetector
+    </marquee>
+
+  </div>
+
+
+
+  <form action="" method="post">
+
+    {% if news_title %}
+    <h3> {{ news_title }}</h3>
+    {% endif %}
+
+    <div class="imgbox"><img src="{{ image }}" width="350" height="300" style="float:right"></div>
+    <div align="left">
+      {% if predictionStacked == 1 %}
+      <p class="text-danger" style="color:green; font-size: 25px;">The News is Real</p>
+      {% elif predictionStacked == 0 %}
+      <p class="text-success" style="color: red; font-size: 25px; ">The News is Fake</p>
+      {% endif %}
+    </div>
+    <h6>Statement </h6> {% if news_text %}
+    <label> {{ news_text }}</label>
+    {% endif %}
+     <br>
+    <h6>News Channel </h6><label>{% if Source %}
+      <label> {{ Source }}</label>
+      {% endif %}</label><br>
+
+    <h6>Channel URL </h6><label>{% if Source_URL %}
+      <a href="{{ Source_URL }}" style="color: darkblue;"> {{ Source_URL }}</a>
+      {% endif %}</label><br>
+
+    <h6>Published Date </h6><label>{% if Published_Date %}
+      <label> {{ Published_Date }}</label>
+      {% endif %}</label><br>
+
+    <h6>Country </h6><label>{% if Country %}
+      <label> {{ Country }}</label>
+      {% endif %}</label><br>
+
+    <h6>Party Affiliation </h6><label>{% if Party_Affiliation %}
+      <label> {{ Party_Affiliation }}</label>
+      {% endif %}</label><br>
+
+    <h6>Author </h6><label>{% if Author %}
+      <label> {{ Author }}</label>
+      {% endif %}</label><br>
+
+    <div class="submit">
+
+      <input type="submit" name="more" value="More Information" />
+
+  </form>
+  </div>
+
+
+</body>
+
+</html>

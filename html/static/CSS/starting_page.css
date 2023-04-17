@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #234270;
+}
+
+.container {
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 40px;
+ 
+}
+h1 {
+  padding: 0px 10px 10px 10px;
+  font-style: normal;
+  color: white;
+
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+}
+
+input {
+  margin-left: 1110px;
+  color: white;
+  height: 37px;
+  width: 120px;
+  background-color: #234270;
+  font-family: sans-serif;
+  border-radius: 20px;
+  border: 2px solid white;
+  font-size: 19px;
+}
+input:hover {
+  color: black;
+  transition: 1s;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: white;
+  font-weight: bold;
+}
+
+h3 {
+  color: white;
+  font-style: times;
+  margin-top: 100px;
+  margin-left: 40px;
+  font-size: 27px;
+  display: flex;
+  text-align: left;
+  
+}
+.home-image
+{
+   border-radius: 20px;
+   position: absolute;
+   margin-left: 40%;
+   top: 25%;
+   height: 450px;
+   width: 600px;
+}
+h4 {
+  margin-top: 8px;
+  margin-left: 40px;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  text-align: left;
+  font-weight: bold;
+}
+h5 {
+  color: white;
+  font-family: sans-serif;
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: 20px;
+  display: flex;
+  font-weight: 200;
+  font-style: italic;
+  
+}
