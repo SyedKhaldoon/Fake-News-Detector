@@ -68,6 +68,50 @@ The dataset used for this project were in csv format named prediction_questions 
  ![image](https://user-images.githubusercontent.com/129365210/234193820-4b9153ab-b120-413e-98fb-d869ca44eaca.png)
 
 ## Architecture Diagram
+1. Dataset Generation
+  * Data from Diversified Sources (Social Media, Websites, News Channels)
+  * Data Extraction ( News Text,Date, Author etc)
+  * Labeled Corpus (Collection of text data that has been manually annotated with labels )
+2. Dataset Preprocessing using NLP(Natural Language Processing)
+  * Redundancy (Removing Duplicates)
+  * Normalize ( data into a consistent and meaningful format so that it can be easily processed and analyzed. For Example this sentence "Imran Khan criticised for defence of Pakistan blasphemy laws" is normalize to " Imran Khan was criticized for defending Pakistan's blasphemy laws" )
+  * Tokenize ( Breaking down a piece of text into smaller units For example ['Imran', 'Khan', 'criticized', 'for', 'defense', 'of', 'Pakistan', 'blasphemy', 'laws'] )
+  * Special Chracters Removal ( removing special characters from a string of text. Special characters are characters that are not letters, numbers, or spaces. They can include punctuation marks, symbols For example Imran Khan criticized for defense of Pakistan blasphemy law )
+  * TF-IDF 
+    term frequency-inverse document frequency which is used to evaluate the importance of a word in a document. The term frequency is the number of times a       word appears in a document. The inverse document frequency is a measure of whether a term is common or rare in a given document corpus. Here are the TF-     IDF scores for the words in the sentence "Imran Khan criticized for defense of Pakistan blasphemy law":
+| Word | TF | IDF | TF-IDF |
+|---|---|---|---|
+| Imran | 0.042 | 0.309 | 0.129 |
+| Khan | 0.042 | 0.309 | 0.129 |
+| criticized | 0.063 | 0.725 | 0.451 |
+| for | 0.094 | 0.518 | 0.489 |
+| defense | 0.063 | 0.649 | 0.411 |
+| of | 0.094 | 0.518 | 0.489 |
+| Pakistan | 0.042 | 0.309 | 0.129 |
+| blasphemy | 0.063 | 0.725 | 0.451 |
+| law | 0.063 | 0.649 | 0.411 |
+
+The word "criticized" has the highest TF-IDF score because it is the most frequent word in the sentence and it also appears in a relatively small number of documents. The word "blasphemy" has the second highest TF-IDF score because it is a less common word, but it is still relevant to the topic of the sentence.
+3. Feature Extraction
+Feature extraction is a process of transforming raw data into features that can be used for machine learning. Features are typically numerical values that represent some aspect of the data.
+  * Lexical analysis and Token Separation 
+    Lexical analysis is the process of breaking down a stream of characters into tokens.Tokenization is the process of identifying and separating tokens in a     stream of characters. This is typically done using a lexical analyzer, which is a program that is specifically designed to perform lexical analysis.
+    Here is the lexical analysis and token separation of the sentence "Imran Khan criticized for defense of Pakistan blasphemy law":
+    | Token | Type |
+    |---|---|
+    | Imran | Proper noun |
+    | Khan | Proper noun |
+    | criticized | Verb |
+    | for | Preposition |
+    | defense | Noun |
+    | of | Preposition |
+    | Pakistan | Proper noun |
+    | blasphemy | Noun |
+    | law | Noun |
+    * Embeddings
+      An embedding is a vector of numbers that represents the meaning of a word.Here is the embedding of the sentence "Imran Khan was criticized for his           defense of Pakistan's blasphemy law":
+      [-0.036, -0.008007, 0.010, 0.0057,...]
+
 ![Final Architecture Diagram-page0001](https://user-images.githubusercontent.com/129365210/234273584-e94dfb17-93cf-4673-9b3c-1ad7c272064d.jpg)
 ## Project Overview
 https://user-images.githubusercontent.com/129365210/234274201-a4302c18-6e51-4ac0-9ea7-fcd60fc100d6.mp4
