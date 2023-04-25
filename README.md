@@ -67,8 +67,12 @@ The dataset used for this project were in csv format named prediction_questions 
  We used Scrum Methodology, and in product backlog the project features include a text box where the user enters the news and two buttons detection and prediction where the news is detected as real or fake and the probability of the news is predicted, as well as feedback of the website.Every week a corner meeting is conducted to discuss the modules and updation of features.
  ![image](https://user-images.githubusercontent.com/129365210/234193820-4b9153ab-b120-413e-98fb-d869ca44eaca.png)
 
- ## Architecture Diagram
- ![Final Architecture Diagram-page0001](https://user-images.githubusercontent.com/129365210/234197452-40adde53-9976-4007-9c63-43f4da58c2b1.jpg)
+## Architecture Diagram
+![Final Architecture Diagram-page0001](https://user-images.githubusercontent.com/129365210/234273584-e94dfb17-93cf-4673-9b3c-1ad7c272064d.jpg)
+## Project Overview
+https://user-images.githubusercontent.com/129365210/234274201-a4302c18-6e51-4ac0-9ea7-fcd60fc100d6.mp4
+
+
 
 
  
