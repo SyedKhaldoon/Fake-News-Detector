@@ -45,6 +45,7 @@ Because there was no dataset of Pakistan political news, we manually collected 5
 The dataset used for this project were in csv format named Detection_Real_4k_.csv and can be found in repo.
 ### Prediction:
 
+
  
 
 
