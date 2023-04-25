@@ -44,7 +44,14 @@ Because there was no dataset of Pakistan political news, we manually collected 5
  * Column 18: Label (Label class contains: Real, Fake)
 The dataset used for this project were in csv format named Detection_Real_4k_.csv and can be found in repo.
 ### Prediction:
+Predicting the probability of news to be authentic in the near future is a challenging task, but it is one that is becoming increasingly important. With the rise of social media and the ease with which fake news can be spread, it is more important than ever to be able to distinguish between real and fake news.
 
+We created a daatset of 300 news questions to predict news articles and check the probability of news. For example, 
+ * Will Pakistan economy grow in 2026 ?
+ * Who will be the next prime minister of pakistan ? 
+ * Who will be the next army chief of Pakistan ?
+ * or Will Pakistan's sports infrastructure improve in the future?
+The dataset used for this project were in csv format named Detection_Real_4k_.csv and can be found in repo.
 
  
 
