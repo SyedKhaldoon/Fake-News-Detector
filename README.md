@@ -74,7 +74,7 @@ The dataset used for this project were in csv format named prediction_questions 
   * Labeled Corpus (Collection of text data that has been manually annotated with labels )
 2. Dataset Preprocessing using NLP(Natural Language Processing)
   * Redundancy (Removing Duplicates)
-  * Normalize 
+  * Normalize  <br>
     Data into a consistent and meaningful format so that it can be easily processed and analyzed. 
     For Example this sentence "Imran Khan criticised for defence of Pakistan blasphemy laws" is normalize to " Imran Khan was criticized for defending           Pakistan's blasphemy laws" 
   * Tokenize 
