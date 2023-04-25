@@ -64,6 +64,7 @@ The dataset used for this project were in csv format named prediction_questions 
  * Flask
 
  ## Software Development Methodology
+ We used Scrum Methodology, and the project features a text box where the user enters the news and two buttons detection and prediction where the news is detected as real or fake and the probability of the news is predicted, as well as feedback of the website.Every week a corner meeting is conducted to discuss the modules and updation of features.
  ![image](https://user-images.githubusercontent.com/129365210/234193820-4b9153ab-b120-413e-98fb-d869ca44eaca.png)
 
  
