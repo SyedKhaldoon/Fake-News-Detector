@@ -51,7 +51,20 @@ We created a daatset of 300 news questions to predict news articles and check th
  * Who will be the next prime minister of pakistan ? 
  * Who will be the next army chief of Pakistan ?
  * or Will Pakistan's sports infrastructure improve in the future?
-The dataset used for this project were in csv format named Detection_Real_4k_.csv and can be found in repo.
+The dataset used for this project were in csv format named prediction_questions (1).csv and can be found in repo.
+
+## Tools
+### Frontend
+ * HTML5
+ * CSS3
+ * Javascript
+### Backend
+ * PHP 7.4
+ * Python 3.10
+ * Flask
+
+ 
+ 
 
  
 
