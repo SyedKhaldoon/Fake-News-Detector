@@ -77,12 +77,12 @@ The dataset used for this project were in csv format named prediction_questions 
   * Normalize  <br>
     Data into a consistent and meaningful format so that it can be easily processed and analyzed. 
     For Example this sentence "Imran Khan criticised for defence of Pakistan blasphemy laws" is normalize to " Imran Khan was criticized for defending           Pakistan's blasphemy laws" 
-  * Tokenize 
+  * Tokenize <br>
     Breaking down a piece of text into smaller units
     For example ['Imran', 'Khan', 'criticized', 'for', 'defense', 'of', 'Pakistan', 'blasphemy', 'laws']
-  * Special Chracters Removal 
+  * Special Chracters Removal <br>
     Removing special characters from a string of text. Special characters are characters that are not letters, numbers, or spaces. They can include               punctuation marks, symbols For example Imran Khan criticized for defense of Pakistan blasphemy law
-  * TF-IDF 
+  * TF-IDF <br>
     term frequency-inverse document frequency which is used to evaluate the importance of a word in a document. The term frequency is the number of times a       word appears in a document. The inverse document frequency is a measure of whether a term is common or rare in a given document corpus. Here are the TF-     IDF scores for the words in the sentence "Imran Khan criticized for defense of Pakistan blasphemy law":
     | Word | TF | IDF | TF-IDF |
     |---|---|---|---|
@@ -97,9 +97,9 @@ The dataset used for this project were in csv format named prediction_questions 
     | law | 0.063 | 0.649 | 0.411 |
 
 The word "criticized" has the highest TF-IDF score because it is the most frequent word in the sentence and it also appears in a relatively small number of documents. The word "blasphemy" has the second highest TF-IDF score because it is a less common word, but it is still relevant to the topic of the sentence.
-3. Feature Extraction
+3. Feature Extraction <br>
 Feature extraction is a process of transforming raw data into features that can be used for machine learning. Features are typically numerical values that represent some aspect of the data.
-  * Lexical analysis and Token Separation 
+  * Lexical analysis and Token Separation <br>
     Lexical analysis is the process of breaking down a stream of characters into tokens.Tokenization is the process of identifying and separating tokens in a     stream of characters. This is typically done using a lexical analyzer, which is a program that is specifically designed to perform lexical analysis.
     Here is the lexical analysis and token separation of the sentence "Imran Khan criticized for defense of Pakistan blasphemy law":
     | Token | Type |
@@ -113,13 +113,16 @@ Feature extraction is a process of transforming raw data into features that can 
     | Pakistan | Proper noun |
     | blasphemy | Noun |
     | law | Noun |
-  * Embeddings
+  * Embeddings <br>
       An embedding is a vector of numbers that represents the meaning of a word.Here is the embedding of the sentence "Imran Khan was criticized for his           defense of Pakistan's blasphemy law":
     [-0.036, -0.008007, 0.010, 0.0057,...]
 4. Detection
+  * RNN  (Recurrent Neural Network) <br>
+    A recurrent neural network (RNN) is a type of artificial neural network that is commonly used to process sequential data. This type of neural network has     a feedback loop that allows it to remember previous states, which makes it well-suited for tasks such as natural language processing and speech               recognition. 
+    Limitation: incapable of handling such “long-term dependencies”.
+    https://miro.medium.com/v2/resize:fit:651/1*6xj691fPWf3S-mWUCbxSJg.jpeg
   * LSTM
   * BI-LSTM
-  * RNN
   * ENSEMBLE DNN
 6. Prediction
   * Deep Hybrid Model
