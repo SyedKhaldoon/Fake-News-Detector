@@ -63,7 +63,9 @@ The dataset used for this project were in csv format named prediction_questions 
  * Python 3.10
  * Flask
 
- 
+ ## Software Development Methodology
+ ![image](https://user-images.githubusercontent.com/129365210/234193820-4b9153ab-b120-413e-98fb-d869ca44eaca.png)
+
  
 
  
