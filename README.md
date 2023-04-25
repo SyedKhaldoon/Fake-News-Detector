@@ -68,7 +68,7 @@ The dataset used for this project were in csv format named prediction_questions 
  ![image](https://user-images.githubusercontent.com/129365210/234193820-4b9153ab-b120-413e-98fb-d869ca44eaca.png)
 
  ## Architecture Diagram
- ![Final Architecture Diagram-page0001](https://user-images.githubusercontent.com/129365210/234196827-df2d6916-0171-4c17-8522-828624c3152c.jpg)
+ ![Final Architecture Diagram-page0001](https://i.imgur.com/129365210/234196827-df2d6916-0171-4c17-8522-828624c3152c.jpg)
 
 
  
