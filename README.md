@@ -22,12 +22,29 @@ Things you need to install:
 3. Xampp
  * You also need to install xampp for database. Xampp Can be downloaded from https://www.apachefriends.org/.
 ## Dataset
-Because there was no dataset of Pakistan political news, we manually collected 5k text-based datasets related to Pakistan politics from various platforms, news channels, websites, and social media.We provided a total of 5K news, of which 4K are Real and 1K are fake News.The dataset has 16 columns in total, which are as follows:
-    * Column 1: The ID of news
-    * Column 2: News Title
-    * Column 3: News Text which contains the claims and statement of News
-    * Column 4: Published Date of news
-    * Column 5:
+### Detection:
+Because there was no dataset of Pakistan political news, we manually collected 5k text-based datasets related to Pakistan politics from various platforms, news channels, websites, and social media.We provided a total of 5K news, of which 4K are Real and 1K are fake News.The dataset has 18 columns in total, which are as follows:
+ * Column 1: The ID of news
+ * Column 2: News Title
+ * Column 3: News Text which contains the claims and statement of News
+ * Column 4: Published Date of news
+ * Column 5: Source (channel Name) on which news was published
+ * Column 6: Source URL
+ * Column 7: Author of news who published
+ * Column 8: Country (Pakistan)
+ * Column 9: Language (English)
+ * Column 10: Other Source (Other channel) which published news
+ * Column 11: Other Source URL
+ * Column 12: News Type (Website, Social Media)
+ * Column 13: Party Affiliation to which party the news is associated
+ * Column 14: Location of the speech or statement
+ * Column 15: Region of the speech or statement
+ * Column 16: Subject ( Categories: Cultural, Democratic, Educational, Economical, International Politics)
+ * Column 17: Header Image URL (Image Related to news)
+ * Column 18: Label (Label class contains: Real, Fake)
+The dataset used for this project were in csv format named Detection_Real_4k_.csv and can be found in repo.
+### Prediction:
+
  
 
 
