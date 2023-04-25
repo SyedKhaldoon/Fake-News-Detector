@@ -114,7 +114,7 @@ Feature extraction is a process of transforming raw data into features that can 
     | blasphemy | Noun |
     | law | Noun |
   * Embeddings
-    An embedding is a vector of numbers that represents the meaning of a word.Here is the embedding of the sentence "Imran Khan was criticized for his           defense of Pakistan's blasphemy law":
+      An embedding is a vector of numbers that represents the meaning of a word.Here is the embedding of the sentence "Imran Khan was criticized for his           defense of Pakistan's blasphemy law":
     [-0.036, -0.008007, 0.010, 0.0057,...]
 4. Detection
   * LSTM
