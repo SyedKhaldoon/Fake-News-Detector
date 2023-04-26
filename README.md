@@ -139,7 +139,7 @@ Feature extraction is a process of transforming raw data into features that can 
     **Stacking**: <br>
     Stacking is a technique for creating an ensemble of models where we train a meta-model to combine the predictions of multiple base models.The meta-           model is trained on the predictions of the base models, and it learns how to combine these predictions to get a more accurate prediction.
     The three models RNN,LSTM, and BILSTM were independently trained on same detection dataset and then we trained a meta model logistic Regression to           combine the predictions of individual models which were then combined to produce a more accurate result.
-6. Prediction
+5. Prediction
   * Deep Hybrid Model <br>
     A deep hybrid model is a machine learning model that combines two or more different types of machine learning algorithms. This can be done to improve the     performance of the model on a particular task, or to make the model more robust to changes in the data.<br>
     For predicting the probability of news, we used neural network, word2vec, and NLP and combined these models to get more accurate results.
@@ -151,6 +151,19 @@ Feature extraction is a process of transforming raw data into features that can 
       Word2vec is a method of representing words as vectors in a high-dimensional space. These vectors are learned from a corpus of text, and they can be           used to represent the meaning of words, their relationships to other words, and their usage patterns.
     * Neural Network <br>
       A neural network is a type of machine learning algorithm that is inspired by the human brain. It is made up of a network of nodes, or neurons, that are       connected to each other. Each neuron receives input from other neurons and produces an output. The output of each neuron is then used as the input to         other neurons.
+  * Cosine Similarity
+    Cosine similarity is a measure of similarity between two non-zero vectors defined in an inner product space. Cosine similarity is the cosine of the angle     between the vectors; that is, it is the dot product of the vectors divided by the product of their lengths. It follows that the cosine similarity does       not depend on the magnitudes of the vectors, but only on their angle. The cosine similarity always belongs to the interval [-1, 1].<br>
+    We found the probability using cosine similarity between the input question and genrated answer.Below is the formula of cosine similarity.<br>
+    <center>
+    Cosine Similarity = (A.B) / (||A|| * ||B||)
+    </center>
+    Where:
+
+    * A is the vector representation of the question
+    * B is the vector representation of the answer
+    * ||A|| is the length of the vector A
+    * ||B|| is the length of the vector B
+
 
 ![Final Architecture Diagram-page0001](https://user-images.githubusercontent.com/129365210/234273584-e94dfb17-93cf-4673-9b3c-1ad7c272064d.jpg)
 ## Project Overview
