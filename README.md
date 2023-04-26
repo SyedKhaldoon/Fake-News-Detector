@@ -154,9 +154,9 @@ Feature extraction is a process of transforming raw data into features that can 
   * Cosine Similarity <br>
     Cosine similarity is a measure of similarity between two non-zero vectors defined in an inner product space. Cosine similarity is the cosine of the angle     between the vectors; that is, it is the dot product of the vectors divided by the product of their lengths. It follows that the cosine similarity does       not depend on the magnitudes of the vectors, but only on their angle. The cosine similarity always belongs to the interval [-1, 1].<br>
     We found the probability using cosine similarity between the input question and genrated answer.Below is the formula of cosine similarity.<br>
-    
-    **Cosine Similarity**= (A.B) / (||A|| * ||B||)<br>
-
+    <center>
+    Cosine Similarity = ( A . B ) / ( || A || * || B || )<br>
+    </center>
     <br>
     Where:
 
