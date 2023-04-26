@@ -96,7 +96,7 @@ The dataset used for this project were in csv format named prediction_questions 
     | blasphemy | 0.063 | 0.725 | 0.451 |
     | law | 0.063 | 0.649 | 0.411 |
 
-The word "criticized" has the highest TF-IDF score because it is the most frequent word in the sentence and it also appears in a relatively small number of documents. The word "blasphemy" has the second highest TF-IDF score because it is a less common word, but it is still relevant to the topic of the sentence.
+The word "criticized" has the highest TF-IDF score because it is the most frequent word in the sentence and it also appears in a relatively small number of documents. The word "blasphemy" has the second highest TF-IDF score because it is a less common word, but it is still relevant to the topic of the sentence.<br>
 3. Feature Extraction <br>
 Feature extraction is a process of transforming raw data into features that can be used for machine learning. Features are typically numerical values that represent some aspect of the data.
   * Lexical analysis and Token Separation <br>
