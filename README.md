@@ -140,7 +140,17 @@ Feature extraction is a process of transforming raw data into features that can 
     Stacking is a technique for creating an ensemble of models where we train a meta-model to combine the predictions of multiple base models.The meta-           model is trained on the predictions of the base models, and it learns how to combine these predictions to get a more accurate prediction.
     The three models RNN,LSTM, and BILSTM were independently trained on same detection dataset and then we trained a meta model logistic Regression to           combine the predictions of individual models which were then combined to produce a more accurate result.
 6. Prediction
-  * Deep Hybrid Model
+  * Deep Hybrid Model <br>
+    A deep hybrid model is a machine learning model that combines two or more different types of machine learning algorithms. This can be done to improve the     performance of the model on a particular task, or to make the model more robust to changes in the data.<br>
+    For predicting the probability of news, we used neural network, word2vec, and NLP and combined these models to get more accurate results.
+    * NLP (Natural Language Processing) <br>
+      Natural language processing (NLP) is a field of computer science that deals with the interaction between computers and human (natural) languages, in         particular the ability of computers to understand and generate human language. <br>
+      Question answering: NLP is used to answer questions about text <br>
+      Text summarization: NLP is used to summarize text into a shorter, more concise version.
+    * Word 2 Vector <br>
+      Word2vec is a method of representing words as vectors in a high-dimensional space. These vectors are learned from a corpus of text, and they can be           used to represent the meaning of words, their relationships to other words, and their usage patterns.
+    * Neural Network <br>
+      A neural network is a type of machine learning algorithm that is inspired by the human brain. It is made up of a network of nodes, or neurons, that are       connected to each other. Each neuron receives input from other neurons and produces an output. The output of each neuron is then used as the input to         other neurons.
 
 ![Final Architecture Diagram-page0001](https://user-images.githubusercontent.com/129365210/234273584-e94dfb17-93cf-4673-9b3c-1ad7c272064d.jpg)
 ## Project Overview
